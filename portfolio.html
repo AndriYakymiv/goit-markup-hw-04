@@ -19,7 +19,7 @@
 <body>
   <!----------------------HEADER---------------------------->
   <header class="header">
-    <div class="container container-header">
+    <div class="container">
       <nav class="header-navigation">
         <a class="header-logo link" href="index.html">Web<span class="header-logo-studio">Studio</span></a>
         <ul class="header-list list">
@@ -35,19 +35,28 @@
         </ul>
       </nav>
       <ul class="header-right list">
-        <li>
-
-
-          <a class="header-mail link" href="mailto:info@example.com" lang="en">info@devstudio.com</a>
+        <li class="header-right-icon">
+          <a href="mailto:info@example.com" class="header-right-link header-link link">
+            <svg class="header-right-icon-svg" width="16px" height="12">
+              <use href="./images/icon/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
         </li>
-        <li>
-          <a class="header-tel link" href="tel:+380991111111">+380961111111</a>
+        <li class="header-right-icon">
+          <a class="header-right-link header-link link" href="tel:+380991111111">
+            <svg class="header-right-icon-svg" width="16" height="12">
+              <use href="./images/icon/icons.svg#icon-envelope"></use>
+            </svg>
+            +380961111111</a>
         </li>
       </ul>
     </div>
   </header>
+
+
   <main>
-    <section>
+    <section class="section">
       <div class="container">
         <h1 hidden>Портфолио</h1>
         <!----------------------PORTFOLIO - FILTER--------------------------->
@@ -81,7 +90,7 @@
         <div class="portfolio-container">
           <ul class="portfolio-projects-list list">
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-tech.jpg" alt="Ноутбук с картинками" width="370" height="294" />
                 <div class="portfolio-projects-des">
                   <h2 class="portfolio-projects-title">Технокряк</h2>
@@ -90,7 +99,7 @@
               </a>
             </li>
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-bask.jpg" alt="Баскетболисти с мячом на постере" width="370"
                   height="294" />
                 <div class="portfolio-projects-des">
@@ -102,7 +111,7 @@
               </a>
             </li>
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-seafood.jpg" alt="Логотип ресторану" width="370" height="294" />
                 <div class="portfolio-projects-des">
                   <h2 class="portfolio-projects-title">Ресторан Seafood</h2>
@@ -111,7 +120,7 @@
               </a>
             </li>
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-head.jpg" alt="Наушники" width="370" height="294" />
                 <div class="portfolio-projects-des">
                   <h2 class="portfolio-projects-title">Проект Prime</h2>
@@ -120,7 +129,7 @@
               </a>
             </li>
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-box.jpg" alt="Две коробки" width="370" height="294" />
                 <div class="portfolio-projects-des">
                   <h2 class="portfolio-projects-title">Проект Boxes</h2>
@@ -129,7 +138,7 @@
               </a>
             </li>
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-comp.jpg" alt="Монитор компютера" width="370" height="294" />
                 <div class="portfolio-projects-des">
                   <h2 class="portfolio-projects-title" lang="en">
@@ -140,7 +149,7 @@
               </a>
             </li>
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-book.jpg" alt="Розгорнутая книга" width="370" height="294" />
                 <div class="portfolio-projects-des">
                   <h2 class="portfolio-projects-title" lang="en">
@@ -151,7 +160,7 @@
               </a>
             </li>
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-lab.jpg" alt="Розгорнутая книга" width="370" height="294" />
                 <div class="portfolio-projects-des">
                   <h2 class="portfolio-projects-title" lang="en">
@@ -162,7 +171,7 @@
               </a>
             </li>
             <li class="portfolio-projects-item">
-              <a class="portfolio-projects-link">
+              <a class="portfolio-projects-link link">
                 <img src="./images/port/port-grow.jpg" alt="Ноутбук с брайзером" width="370" height="294" />
                 <div class="portfolio-projects-des">
                   <h2 class="portfolio-projects-title" lang="en">
@@ -181,22 +190,57 @@
   <!----------------------FOOTER-------------------------->
   <footer class="footer">
     <div class="container">
-      <h2 hidden lang="ru">Контакты</h2>
-      <a class="footer-logo link" href="index.html">Web<span class="footer-logo-studio">Studio</span></a>
-      <address class="address">
-        <ul class="footer-list-address list">
-          <li class="footer-item">
-            <a class="footer-address link" href="https://goo.gl/maps/ysLMHzsxWUq1JGbp9" target="_blank"
-              rel="noopener noreferrer">г. Киев,пр-т Леси Украинки, 26</a>
+      <div class="footer-address">
+        <h2 hidden lang="ru">Контакты</h2>
+        <a class="footer-logo link" href="index.html">Web<span class="footer-logo-studio">Studio</span></a>
+        <address class="address">
+          <ul class="footer-list-address list">
+            <li class="footer-item">
+              <a class="footer-address link" href="https://goo.gl/maps/ysLMHzsxWUq1JGbp9" target="_blank"
+                rel="noopener noreferrer">г. Киев,пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-email link" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-tel link" href="tel:+380991111111">+380991111111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-social-media">
+        <h3 class="footer-social-title">Присоединяйтесь</h3>
+        <ul class="footer-socials list socials-list">
+          <li class="footer-socials-item">
+            <a href="#" class="footer-socials-link link">
+              <svg class="footer-socials-link-icon" with="20" height="20">
+                <use href="../images/icon/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li class="footer-item">
-            <a class="footer-email link" href="mailto:info@example.com">info@example.com</a>
+          <li class="footer-socials-item">
+            <a href="#" class="footer-socials-link link">
+              <svg class="footer-socials-link-icon" with="20" height="20">
+                <use href="../images/icon/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
-          <li class="footer-item">
-            <a class="footer-tel link" href="tel:+380991111111">+380991111111</a>
+          <li class="footer-socials-item">
+            <a href="#" class="footer-socials-link link">
+              <svg class="footer-socials-link-icon" with="20" height="20">
+                <use href="../images/icon/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a href="#" class="footer-socials-link link">
+              <svg class="footer-socials-link-icon" with="20" height="20">
+                <use href="../images/icon/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
+      </div>
     </div>
   </footer>
 </body>
